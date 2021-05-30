@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alterar dados | Portal permuta progesp</title>
+  <!-- App css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+  <!-- Web -->
+  <link
+  rel="icon"
+  type="image/png"
+  href="assets/images/Favicons/favicon-Web-16.png"
+  sizes="16x16"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  href="assets/images/Favicons/favicon-Web-32.png"
+  sizes="32x32"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  href="assets/images/Favicons/favicon-Web-96.png"
+  sizes="96x96"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  href="assets/images/Favicons/favicon-Web-128.png"
+  sizes="128x128"
+  />
+  <link
+  rel="icon"
+  type="image/png"
+  href="assets/images/Favicons/favicon-Web-192.png"
+  sizes="192x192"
+  />
+
+  <!-- iOS -->
+  <link
+  rel="apple-touch-icon"
+  href="assets/images/Favicons/favicon-iOS-120.png"
+  sizes="120x120"
+  />
+  <link
+  rel="apple-touch-icon"
+  href="assets/images/Favicons/favicon-iOS-152.png"
+  sizes="152x152"
+  />
+  <link
+  rel="apple-touch-icon"
+  href="assets/images/Favicons/favicon-iOS-167.png"
+  sizes="167x167"
+  />
+  <link
+  rel="apple-touch-icon"
+  href="assets/images/Favicons/favicon-iOS-180.png"
+  sizes="180x180"
+  />
+
+  <!-- Android -->
+  <link
+  rel="shortcut icon"
+  href="Favicons/favicon-Android-196.png"
+  sizes="196x196"
+  />
+</head>
+
+<body>
+  <header
+    id="header"
+    class="border-header shadow-sm bg-white py-2 fixed-top"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-md-3 order-1">
+          <a href="feed.html">
+            <img
+            src="assets/images/logo-portal-permuta.png"
+            class="img-fluid logo d-block mx-auto d-md-inline"
+            alt=""
+          />
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 col-md-5 d-flex align-items-center justify-content-end order-3 order-md-2"
+        >
+          <div class="input-group my-2 my-md-0">
+            <div class="input-group-prepend">
+              <span class="input-group-text border-0 input-search">
+                <img src="assets/images/icon-search.svg" class="pl-2" />
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control input-search border-0 py-4"
+              placeholder="Buscar..."
+            />
+          </div>
+        </div>
+        <div
+          class="col-8 col-lg-3 col-md-4 d-flex align-items-center justify-content-end order-2 order-md-3"
+        >
+          <div>
+            <a
+              class="nav-link nav-user dropdown-toggle"
+              href="https://example.com"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="d-none d-md-inline">Olá, Fulano de tal</span>
+              <img
+                src="assets/images/imgPerfil.png"
+                class="img-fluid ml-2"
+                alt=""
+              />
+              <i data-feather="circle"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">
+                <svg
+                  class="mr-2"
+                  width="21.938"
+                  height="16.704"
+                  viewBox="0 0 21.938 16.704"
+                >
+                  <path
+                    id="icone-mensagens"
+                    d="M20.542,9.685a.246.246,0,0,1,.4.192v8.363A1.963,1.963,0,0,1,18.975,20.2H1.963A1.963,1.963,0,0,1,0,18.241V9.882A.245.245,0,0,1,.4,9.69c.916.712,2.131,1.615,6.3,4.646.863.63,2.319,1.955,3.771,1.947,1.46.012,2.944-1.341,3.775-1.947C18.415,11.3,19.625,10.4,20.542,9.685ZM10.469,14.969c.949.016,2.315-1.194,3-1.693,5.427-3.938,5.84-4.282,7.091-5.263a.979.979,0,0,0,.376-.773V6.463A1.963,1.963,0,0,0,18.975,4.5H1.963A1.963,1.963,0,0,0,0,6.463V7.24a.985.985,0,0,0,.376.773c1.251.977,1.664,1.325,7.091,5.263C8.154,13.775,9.52,14.985,10.469,14.969Z"
+                    transform="translate(0.5 -4)"
+                    fill="#fff"
+                    stroke="#b5b5c3"
+                    stroke-width="1"
+                  />
+                </svg>
+                Mensagens
+              </a>
+              <a class="dropdown-item" href="#">
+                <svg
+                  class="mr-2"
+                  width="21.889"
+                  height="17.218"
+                  viewBox="0 0 21.889 17.218"
+                >
+                  <path
+                    id="icone-permuta"
+                    d="M0,8.467V7.82a.971.971,0,0,1,.971-.971H15.533V4.908a.972.972,0,0,1,1.657-.686l3.236,3.236a.971.971,0,0,1,0,1.373l-3.236,3.236a.971.971,0,0,1-1.657-.686V9.438H.971A.971.971,0,0,1,0,8.467Zm19.74,6.149H5.178V12.674a.972.972,0,0,0-1.657-.686L.284,15.224a.971.971,0,0,0,0,1.373L3.52,19.833a.971.971,0,0,0,1.657-.686V17.2H19.74a.971.971,0,0,0,.971-.971v-.647A.971.971,0,0,0,19.74,14.616Z"
+                    transform="translate(0.589 -3.418)"
+                    fill="#fff"
+                    stroke="#b5b5c3"
+                    stroke-width="1"
+                  />
+                </svg>
+                Minhas permutas
+              </a>
+              <a class="dropdown-item" href="#">
+                <svg
+                  width="19.545"
+                  height="21.739"
+                  viewBox="0 0 19.545 21.739"
+                  class="mr-2"
+                >
+                  <g transform="translate(-5 -3.5)">
+                    <path
+                      d="M23.545,29.08V26.886A4.386,4.386,0,0,0,19.159,22.5H10.386A4.386,4.386,0,0,0,6,26.886V29.08"
+                      transform="translate(0 -4.841)"
+                      fill="none"
+                      stroke="#b5b5c3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M20.773,8.886A4.386,4.386,0,1,1,16.386,4.5,4.386,4.386,0,0,1,20.773,8.886Z"
+                      transform="translate(-1.614)"
+                      fill="none"
+                      stroke="#b5b5c3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
+                Perfil
+              </a>
+              <a class="dropdown-item" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22.223"
+                  height="22.223"
+                  viewBox="0 0 22.223 22.223"
+                  class="mr-2"
+                >
+                  <path
+                    d="M14.486,3.375A11.111,11.111,0,1,0,25.6,14.486,11.11,11.11,0,0,0,14.486,3.375ZM17.4,5.319a9.64,9.64,0,0,1,6.25,6.25l-4.744.321A5.129,5.129,0,0,0,17.1,10.074ZM7.686,7.686A9.547,9.547,0,0,1,11.57,5.319l.3,4.754a5.247,5.247,0,0,0-1.811,1.811L5.314,11.57A9.653,9.653,0,0,1,7.686,7.686ZM11.57,23.653a9.64,9.64,0,0,1-6.25-6.25l4.754-.3A5.172,5.172,0,0,0,11.879,18.9Zm2.917-5.534a3.633,3.633,0,1,1,3.633-3.633A3.636,3.636,0,0,1,14.486,18.119Zm6.8,3.168A9.582,9.582,0,0,1,17.4,23.653L17.088,18.9a5.146,5.146,0,0,0,1.822-1.827l4.744.321A9.565,9.565,0,0,1,21.287,21.287Z"
+                    transform="translate(-3.375 -3.375)"
+                    fill="#b5b5c3"
+                  />
+                </svg>
+                Entenda o processo
+              </a>
+              <div class="divider"></div>
+              <a href="#" class="dropdown-item">
+                <svg
+                  class="mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22.126"
+                  height="19.361"
+                  viewBox="0 0 22.126 19.361"
+                >
+                  <path
+                    id="Icon_open-account-logout"
+                    data-name="Icon open-account-logout"
+                    d="M8.3,0V2.766H19.361V16.595H8.3v2.766H22.126V0ZM5.532,5.532,0,9.68l5.532,4.149V11.063H16.595V8.3H5.532Z"
+                    fill="#b5b5c3"
+                  />
+                </svg>
+                Sair
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container pt-5 pt-md-5">
+    <div class="pt-5 mt-3 mt-md-0">
+      <div class="row pt-5 pt-md-4">
+        <div class="col-lg-3 d-none d-lg-block">
+          <aside class="sidebar">
+            <div class="card py-4 px-2">
+              <nav class="nav flex-column">
+                <a class="nav-link active mb-2" href="feed.html">
+                  <svg class="mr-2" width="18.1" height="20" viewBox="0 0 18.1 20">
+                    <g transform="translate(-4 -2.5)">
+                      <path
+                        d="M4.5,9.65,13.05,3,21.6,9.65V20.1A1.9,1.9,0,0,1,19.7,22H6.4a1.9,1.9,0,0,1-1.9-1.9Z"
+                        fill="none"
+                        stroke="#b5b5c3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                      />
+                      <path
+                        d="M13.5,27.5V18h5.7v9.5"
+                        transform="translate(-3.3 -5.5)"
+                        fill="none"
+                        stroke="#b5b5c3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                  Página inicial
+                </a>
+                <a class="nav-link mb-2" href="mensagens.html">
+                  <div class="position-relative d-inline-block">
+                    <svg
+                      class="mr-2"
+                      width="21.938"
+                      height="16.704"
+                      viewBox="0 0 21.938 16.704"
+                    >
+                      <path
+                        id="icone-mensagens"
+                        d="M20.542,9.685a.246.246,0,0,1,.4.192v8.363A1.963,1.963,0,0,1,18.975,20.2H1.963A1.963,1.963,0,0,1,0,18.241V9.882A.245.245,0,0,1,.4,9.69c.916.712,2.131,1.615,6.3,4.646.863.63,2.319,1.955,3.771,1.947,1.46.012,2.944-1.341,3.775-1.947C18.415,11.3,19.625,10.4,20.542,9.685ZM10.469,14.969c.949.016,2.315-1.194,3-1.693,5.427-3.938,5.84-4.282,7.091-5.263a.979.979,0,0,0,.376-.773V6.463A1.963,1.963,0,0,0,18.975,4.5H1.963A1.963,1.963,0,0,0,0,6.463V7.24a.985.985,0,0,0,.376.773c1.251.977,1.664,1.325,7.091,5.263C8.154,13.775,9.52,14.985,10.469,14.969Z"
+                        transform="translate(0.5 -4)"
+                        fill="#fff"
+                        stroke="#b5b5c3"
+                        stroke-width="1"
+                      />
+                    </svg>
+                    <span class="number-msgs position-absolute">9</span>
+                  </div>
+                  Mensagens
+                </a>
+                <a
+                  class="nav-link mb-2"
+                  data-toggle="collapse"
+                  href="#colapseMinhasPermutas"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="colapseMinhasPermutas"
+                >
+                  <svg
+                    class="mr-2"
+                    width="21.889"
+                    height="17.218"
+                    viewBox="0 0 21.889 17.218"
+                  >
+                    <path
+                      id="icone-permuta"
+                      d="M0,8.467V7.82a.971.971,0,0,1,.971-.971H15.533V4.908a.972.972,0,0,1,1.657-.686l3.236,3.236a.971.971,0,0,1,0,1.373l-3.236,3.236a.971.971,0,0,1-1.657-.686V9.438H.971A.971.971,0,0,1,0,8.467Zm19.74,6.149H5.178V12.674a.972.972,0,0,0-1.657-.686L.284,15.224a.971.971,0,0,0,0,1.373L3.52,19.833a.971.971,0,0,0,1.657-.686V17.2H19.74a.971.971,0,0,0,.971-.971v-.647A.971.971,0,0,0,19.74,14.616Z"
+                      transform="translate(0.589 -3.418)"
+                      fill="#fff"
+                      stroke="#b5b5c3"
+                      stroke-width="1"
+                    />
+                  </svg>
+                  Minhas permutas
+                  <i class="icon seta-baixo"></i>
+                </a>
+                <div class="collapse" id="colapseMinhasPermutas">
+                  <nav class="nav flex-column sub-menu">
+                    <a class="nav-link ml-3" href="em-andamento.html">Em andamento</a>
+                    <a class="nav-link ml-3" href="tenho-interesse.html">Tenho interesse</a>
+                  </nav>
+                </div>
+                <a
+                  class="nav-link mb-2"
+                  data-toggle="collapse"
+                  href="#colapsePerfil"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="colapsePerfil"
+                  ><svg
+                    width="19.545"
+                    height="21.739"
+                    viewBox="0 0 19.545 21.739"
+                    class="mr-2"
+                  >
+                    <g transform="translate(-5 -3.5)">
+                      <path
+                        d="M23.545,29.08V26.886A4.386,4.386,0,0,0,19.159,22.5H10.386A4.386,4.386,0,0,0,6,26.886V29.08"
+                        transform="translate(0 -4.841)"
+                        fill="none"
+                        stroke="#b5b5c3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M20.773,8.886A4.386,4.386,0,1,1,16.386,4.5,4.386,4.386,0,0,1,20.773,8.886Z"
+                        transform="translate(-1.614)"
+                        fill="none"
+                        stroke="#b5b5c3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                  </svg>
+                  Perfil
+                  <i class="icon seta-baixo"></i>
+        
+                </a>
+                <div class="collapse" id="colapsePerfil">
+                  <nav class="nav flex-column sub-menu">
+                    <a class="nav-link ml-3" href="alterar-dados.html">Alterar dados</a>
+                    <a class="nav-link ml-3" href="#">Segurança</a>
+                  </nav>
+                </div>
+                <a class="nav-link mb-2" href="entenda-processo.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22.223"
+                    height="22.223"
+                    viewBox="0 0 22.223 22.223"
+                    class="mr-2"
+                  >
+                    <path
+                      d="M14.486,3.375A11.111,11.111,0,1,0,25.6,14.486,11.11,11.11,0,0,0,14.486,3.375ZM17.4,5.319a9.64,9.64,0,0,1,6.25,6.25l-4.744.321A5.129,5.129,0,0,0,17.1,10.074ZM7.686,7.686A9.547,9.547,0,0,1,11.57,5.319l.3,4.754a5.247,5.247,0,0,0-1.811,1.811L5.314,11.57A9.653,9.653,0,0,1,7.686,7.686ZM11.57,23.653a9.64,9.64,0,0,1-6.25-6.25l4.754-.3A5.172,5.172,0,0,0,11.879,18.9Zm2.917-5.534a3.633,3.633,0,1,1,3.633-3.633A3.636,3.636,0,0,1,14.486,18.119Zm6.8,3.168A9.582,9.582,0,0,1,17.4,23.653L17.088,18.9a5.146,5.146,0,0,0,1.822-1.827l4.744.321A9.565,9.565,0,0,1,21.287,21.287Z"
+                      transform="translate(-3.375 -3.375)"
+                      fill="#b5b5c3"
+                    />
+                  </svg>
+        
+                 Entenda o processo</a>
+              </nav>
+            </div>
+          </aside>
+
+        </div>
+        <!-- Div para sidebar -->
+
+        <div class="col-12 col-lg-9">
+          <div class="row mx-lg-n4">
+            <div class="col-lg-12 mb-3 px-1">
+              <h3 class="text-center text-md-left titulo mb-1">Dados</h3>
+            </div>
+          </div>
+          <div class="row mx-lg-n4">
+            <div class="col-lg-12 mb-3 px-1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="alterardados">
+                    <form>
+                      <label for="inlineFormInput">Imagem</label>
+
+                      <p><img src="assets/images/imgAlterarDados.png" class="imgAlterarDados" alt="">
+                        <button type="submit" class="btn btn-alterardados">Alterar</button>
+                      
+                      <p><label for="inlineFormInput">Nome</label>
+                        <input disabled type="text" class="form-control mb-2 disabled" id="nomeUsuario"
+                          placeholder="Fulano">
+
+                        <label for="inlineFormInput">Data de nascimento</label>
+                        <input disabled type="date" id="dataNascimento" class="form-control mb-2 disabled"
+                          placeholder="dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off">
+
+                        <label for="inlineFormInput">CPF</label>
+                        <input disabled type="text" class="form-control mb-2 disabled cpf-mask"
+                          placeholder="000.000.000-00" data-mask="999.999.999-99" maxlength="11" id="cpfUsuario">
+
+                    </form>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-12 mb-3 px-1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="alterardados">
+
+                    <p><label for="inlineFormInput">Abaixo estão as informações nas quais você inseriu no início do
+                        cadastro:</label></p>
+                    <p>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Administração
+                        <span class="icon icon-remove"></span>
+                      </button>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Frontend
+                        <span class="icon icon-remove"></span>
+                      </button>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Logística
+                        <span class="icon icon-remove"></span>
+                      </button>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Programação
+                        <span class="icon icon-remove"></span>
+                      </button>
+                    </p>
+
+                    <!-- Botão para acionar modal -->
+                    <button type="submit" class="btn btn-alterardados mt-2" data-toggle="modal"
+                      data-target="#modalExemplo">
+                      Adicionar
+                      <span class="icon icon-addHabilidade"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                
+                <div class="modal-content">
+                  <div class="modal-headerCustom">
+                    <h5 class="modal-title"><b>Adicionar tags de habilidades</h5></b>
+                    <div class="iconFechar" data-dismiss="modal" aria-label="Fechar">
+                      <span class="icon icon-remove"></span>                     
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <small label for="inlineFormInput">Tag de habilidade</label>
+                    <form>
+                      <div class="form-group  mb-0">
+                       
+                        <input type="text" class=" addHabilidade form-control" id="exampleInputEmail1" autocomplete="additional-name">
+                      
+                      </div>
+                      </form>
+                  </div>
+                  <div class="modal-footerCustom">
+                    <button type="submit" class="btn btn-salvar">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-12 mb-3 px-1">
+              <button type="submit" class="btn btn-salvar">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button onclick="topFunction()" id="totop" title="Ir para o topo">
+    <img src="assets/images/icone-ir-topo.png" alt="" srcset="">
+    Subir
+  </button>
+  
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/libs/form-cadastro/form.js"></script>
+  </body>
+  </html>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.sidebar, .sidebarDashboard {
+  position: fixed;
+  z-index: 1;
+
+  .number-msgs {
+    border-radius: 40px;
+    background-color: #e76f51;
+    padding: 0px 6px;
+    color: #fff;
+    font-size: .9375rem;
+    left: 9px;
+    top: 8px;
+    font-weight: 300;
+  }
+
+  .sub-menu {
+    margin-left: 18px;
+    a {
+      font-weight: 400;
+    }
+  }
+
+  a {
+    font-weight: bold;
+    
+
+    &.active {
+      background-color: $bg;
+      svg path {
+        stroke: $verdeClaro;
+      }
+    }
+
+    &[data-toggle="collapse"] .seta-baixo:before {   
+      content: url(../images/icon-feather-chevron-down.png);
+      position: absolute;
+      right: 14px;
+    }
+    &[data-toggle="collapse"].collapsed .seta-baixo:before {  
+      content: url(../images/icon-feather-chevron-down.png);
+      position: absolute;
+      right: 14px;
+    }
+    &[aria-expanded="true"] .seta-baixo:before {  
+      content: url(../images/icon-seta-cima.png);
+    }
+  }
+}

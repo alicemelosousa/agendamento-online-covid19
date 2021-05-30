@@ -1,0 +1,29 @@
+.chamado {
+  box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.1);
+
+  &:nth-of-type(odd) {
+    background-color: #E9F1F8;
+  }
+  &:nth-of-type(even) {
+    background-color: white;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+  
+  .dia {
+    font-size: 14;
+    font-weight: 300;
+  }
+}
+
+.assunto {
+  border: 1px solid #707070;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.resposta-chamado {
+  box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.1);
+}

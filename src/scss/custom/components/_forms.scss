@@ -1,0 +1,353 @@
+.input-custom {
+  background-color: $bg;
+  border-radius: .375rem;
+  border-color: transparent;
+  padding: 25px;
+}
+
+//mixins
+@mixin transition-mix(
+  $property: all,
+  $duration: 0.2s,
+  $timing: linear,
+  $delay: 0s
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
+}
+
+@mixin position-absolute($top: null, $left: null, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+//basic variables
+$theme-font-color: #2c2c2c;
+
+//common styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001a;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  opacity: 1;
+  margin-top: 272px;
+  margin-left: 448px;
+  margin-bottom: 272px;
+  margin-right: 455px;
+  width: 504px;
+  height: 456px;
+  align-items: center;
+
+  
+
+}
+body {
+  font: {
+    family: "Poppins", sans-serif;
+    size: 16px;
+  }
+  color: $azulEscuro;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.header__btn {
+  @include transition-mix;
+
+  padding: 10px 20px;
+  display: inline-block;
+  margin-right: 10px;
+
+  background-color: #fff;
+  border: 1px solid $theme-font-color;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  outline: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &.js-active {
+    color: #fff;
+
+    background-color: $theme-font-color;
+  }
+}
+
+//header styles
+.header {
+  max-width: 600px;
+  margin: 50px auto;
+
+  text-align: center;
+}
+
+.header__title {
+  margin-bottom: 30px;
+
+  font: {
+    size: 2.1rem;
+  }
+}
+
+//content styles
+.content {
+  width: 95%;
+  margin: 0 auto 50px;
+}
+
+.content__title {
+  margin-bottom: 40px;
+
+  font: {
+    size: 20px;
+  }
+  text-align: center;
+}
+
+.content__title--m-sm {
+  margin-bottom: 10px;
+}
+
+//multisteps variables
+$color-secondary: #6c757d;
+$color-primary: #007bff;
+
+$btn-offset-vert: 20px;
+$btn-circle-decor-dimensions: 13px;
+
+//multisteps progress styles
+.multisteps-form__progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.multisteps-form__progress-btn {
+  @include transition-mix($duration: 0.15s);
+
+  position: relative;
+
+  padding-top: $btn-offset-vert;
+
+  color: rgba($color-secondary, 0.7);
+
+  text-indent: -9999px;
+
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+
+  cursor: pointer;
+
+  @media (min-width: 500px) {
+    text-indent: 0;
+  }
+
+  //circle decoration
+  &:before {
+    @include position-absolute($top: 0, $left: 50%);
+
+    display: block;
+    width: $btn-circle-decor-dimensions;
+    height: $btn-circle-decor-dimensions;
+
+    content: "";
+
+    transform: translateX(-50%);
+
+    transition: all 0.15s linear 0s,
+      transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    background-color: #fff;
+
+    box-sizing: border-box;
+
+    z-index: 3;
+  }
+
+  //line decoration
+  &:after {
+    @include position-absolute(
+      $top: $btn-offset-vert/4,
+      $left: calc(-50% - #{$btn-circle-decor-dimensions} / 2)
+    );
+    @include transition-mix($duration: 0.15s);
+
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    content: "";
+
+    background-color: currentColor;
+
+    z-index: 1;
+  }
+
+  //last child - without line decoration
+  &:first-child {
+    &:after {
+      display: none;
+    }
+  }
+
+  //active styles
+  &.js-active {
+    color: $verdeClaro;
+
+    &:before {
+      transform: translateX(-50%) scale(1.2);
+
+      background-color: currentColor;
+    }
+  }
+}
+
+//multisteps form styles
+.multisteps-form__form {
+  position: relative;
+}
+
+//multisteps panels styles
+.multisteps-form__panel {
+  @include position-absolute($top: 0, $left: 0);
+  border:1px solid $laranjaClaro2;
+  border-radius: .375rem;
+  width: 100%;
+  height: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  h3 {
+    color: $verdeClaro;
+    font-size: 1.375rem;
+    font-weight: bold;
+    border-bottom: 1px solid $laranjaClaro2;
+  }
+
+  //active panels
+  &.js-active {
+    height: auto;
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+  //scaleOut animation
+  &[data-animation="scaleOut"] {
+    transform: scale(1.1);
+
+    &.js-active {
+      @include transition-mix;
+
+      transform: scale(1);
+    }
+  }
+
+  //slideHorz animation
+  &[data-animation="slideHorz"] {
+    left: 50px;
+
+    &.js-active {
+      @include transition-mix(
+        $duration: 0.25s,
+        $timing: cubic-bezier(0.2, 1.13, 0.38, 1.43)
+      );
+
+      left: 0;
+    }
+  }
+
+  //slideVert animation
+  &[data-animation="slideVert"] {
+    top: 30px;
+
+    &.js-active {
+      @include transition-mix();
+
+      top: 0;
+    }
+  }
+
+  //fadeIn animation
+  &[data-animation="fadeIn"] {
+    &.js-active {
+      @include transition-mix($duration: 0.3s);
+    }
+  }
+
+  //scaleOut
+  &[data-animation="scaleIn"] {
+    transform: scale(0.9);
+
+    &.js-active {
+      @include transition-mix;
+
+      transform: scale(1);
+    }
+  }
+}
+
+
+.custom-checkbox {
+  border: 1px solid $laranjaClaro2;
+  padding: 8px 18px 8px 35px;
+  border-radius: 8px;
+
+  .custom-control-label::before {
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: $azulEscuro;
+    width: 17px;
+    height: 17px;
+  }
+
+  .custom-control-input:checked~.custom-control-label::before {
+    border-color: $azulEscuro;
+    background-color: transparent;
+  }
+  
+  .custom-control-input:checked~.custom-control-label::after {
+    background-image: url(../images/icone-checked.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 54%;
+  }
+}
+
+.fill {
+  background-color: $laranjaClaro;
+}
+
+.disabled:disabled {
+  color: $corTxtDesabilitado;
+  background-color: $botaoDesabilitado;
+  opacity: 1;
+  border-color: $laranjaClaro2;
+}
+
+.addHabilidade {
+  border-color: $laranjaClaro2; 
+}

@@ -1,0 +1,55 @@
+.pagination {
+  .page-item {
+    &:first-child {
+      .page-link {
+        background-color: $verdeMuitoClaro;
+        color: $verdeClaro;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    &:last-child {
+      .page-link {
+        background-color: $verdeClaro;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .page-link {
+      background-color: transparent;
+      color: $azulEscuro;
+      border-radius: 8px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &.active {
+      .page-link {
+        background-color: $verdeClaro;
+        border-radius: 8px;
+        color: white;
+      }
+    }
+  }
+
+  .disabled {
+    &:first-child,
+    &:last-child {
+      .page-link {
+        background-color: #e9ecef;
+        color: $corTxt;
+      }
+    }
+    .page-link {
+      background-color: #e9ecef;
+      color: $corTxt;
+      img {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+#headerCadastro {
+  .nav-user {
+    color: $corTxt;
+  }
+}
+
+.input-search {
+  background-color: $bg;
+}
+
+.border-header {
+  border-bottom: 1px solid $laranjaClaro;
+}
+
+.logo {
+  max-width: 126px;
+}
+
+.modal-headerCustom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem 15px;
+  border-bottom: 1px solid $laranjaClaro2;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}

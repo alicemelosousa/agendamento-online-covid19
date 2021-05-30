@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body, html {
+  height:100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-size: 1rem;
+  color: $corTxt;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: $azulEscuro;
+
+  &:hover {
+    text-decoration: none;
+    color:$azulClaro;
+    
+  }
+
+}
+.titulo {
+  color: $azulEscuro;
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+.titulo-pesquisa {
+  h2 {
+      font-family: $font1;
+      font-weight: bold;
+      font-size: 30px;
+      color: $azulEscuro;
+  }
+}
+
+#totop {
+  display: none;
+  position: fixed;
+  bottom: 13px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #e76f51;
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgba($color: #fff, $alpha: 0.5);;
+  box-shadow: 0 5px 30px rgba($color: #000000, $alpha: 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#totop:hover {
+  background-color: #e76f51;
+}
+
+.imgAlterarDados{
+  
+  max-width: 100%;
+  height: auto;
+  padding: 15px 35px 20px 0px;
+
+}

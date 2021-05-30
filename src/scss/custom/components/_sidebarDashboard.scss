@@ -1,0 +1,32 @@
+.content-inner {
+  padding-left: 17rem;
+  width: 100%;
+}
+
+.sidebarDashboard {
+  border-right: 1px solid $laranjaClaro;
+  border-top: 1px solid $laranjaClaro;
+  border-bottom: 1px solid $laranjaClaro;
+  border-radius: 0.375rem;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  width: 16.9rem;
+  height: 100vh;
+
+
+  a {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebarDashboard {
+    transform: translateX(-16.9rem);
+  }
+
+  .content-inner {
+    margin-left: -16.9rem;
+    width: auto;
+  }
+}

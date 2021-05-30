@@ -1,0 +1,11 @@
+.breadcrumb-custom {
+  background-color: transparent;
+
+  .breadcrumb-item {
+    &+.breadcrumb-item{
+      &::before {
+        content: url(../images/icon-feather-chevron-right.png);
+      }
+    }
+  }
+}

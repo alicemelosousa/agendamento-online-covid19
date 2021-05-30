@@ -1,0 +1,30 @@
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+@import "bootstrap";
+@import "variables";
+@import "general";
+
+//Components
+@import "custom/components/buttons";
+@import "custom/components/pagination";
+@import "custom/components/breadcrumb";
+@import "custom/components/cards";
+@import "custom/components/footer";
+@import "custom/components/forms";
+@import "custom/components/sidebar";
+@import "custom/components/sidebarDashboard";
+@import "custom/components/header";
+@import "custom/components/search";
+@import "custom/components/estatistica";
+@import "custom/components/table";
+@import "custom/components/chat";
+@import "custom/components/chamado";
+
+// Pages
+@import "custom/pages/index";
+@import "custom/pages/dashboard";
+@import "custom/pages/login";
+@import "custom/pages/entenda-processo";
+@import "media_queries";

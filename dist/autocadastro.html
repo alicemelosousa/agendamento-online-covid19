@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Autocadastro</title>
+  <!-- App css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+
+
+
+<body class="login">
+  <div class="container-fluid">
+    <div class="row no-gutter d-none d-md-flex">
+      <div class="col-md-3-pl-0 ">
+
+        <div class="login-pd-0 d-flex align-items-center bg-image">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12-pd-0 d-flex justify-content-center flex-column">
+                <div class="card-login">
+
+                  <div class="image-calendar">
+
+
+                  </div>
+                  <h1>Agendamento online</h1>
+                  <h2>Rápido e seguro</h2>
+                  <h3>Evite filas e aglomeração.<br> O seu bem é o bem de todos</h3>
+
+                </div>
+
+                <div class="footerlais">
+                  <div class="footerufrn"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--<div class="col-md-7 .d-sm-none .d-md-block">-->
+
+      <div class="container p-0 no-gutters">
+        <!--form panels-->
+        <div class="row">
+
+          <div class="col-12 col-lg-9">
+
+
+
+            <div class="cabecalhologin"><span class="d-none d-md-inline">Não tem uma conta?</span>
+
+
+              <a href="index.html" class="btn btn-cadastro"><span class="icon icon-cadastro"></span>
+                Crie uma</a>
+
+            </div>
+
+
+            <div class="row mx-lg-n4">
+              <div class="col-lg-12 mb-3 px-1">
+                <form>
+                  <div class="card">
+                      <div class="card-cadastro">
+                    <div class="card-body">
+                       
+                        <label for="inlineFormInput" class="label titulocadastro">Preencha o campo abaixo</label>
+                        <label for="inlineFormInput" class="label subtitulocadastro">É rápido, simples e seguro</label>
+                        <label for="inlineFormInput" class="label loginemail">Email</label>
+                        <input type="text" required class="form-control campoemail" id="input">
+
+                        
+
+                      <button class="button btn-continuar" value="entrar" id="entrar"> Continuar</button>
+                </form>
+
+              </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        document.getElementById("entrar").disabled = true;
+
+        //cria um event listener que escuta mudanças no input
+        document.getElementById("input").addEventListener("input", function (event) {
+
+          //busca conteúdo do input
+          var conteudo = document.getElementById("input").value;
+
+          //valida conteudo do input 
+          if (conteudo !== null && conteudo !== '') {
+            //habilita o botão
+            document.getElementById("entrar").disabled = false;
+          } else {
+            //desabilita o botão se o conteúdo do input ficar em branco
+            document.getElementById("entrar").disabled = true;
+          }
+        });
+
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
