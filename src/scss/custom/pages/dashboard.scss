@@ -2,4 +2,299 @@
   .card {
     min-height: 193px;
   }
+
+  .titulodashboard2 {
+    width: 324px;
+    height: 36px;
+    text-align: left;
+    font: normal normal bold 26px/26px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    margin-left: 30px;
+    margin-top: 42px;
+  }
+
+  .txtdashboard {
+    text-align: left;
+    font: normal normal normal 16px/22px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    margin-left: 30px;
+  }
+  .conteudo {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #1e293b;
+    border-radius: 4px;
+    opacity: 1;
+    width: 232px;
+    padding-left: 20px;
+  }
+
+  .txt1 {
+    font: normal normal bold 17px/29px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+    width: 56px;
+    height: 24px;
+    margin-bottom: 0px;
+  }
+
+  .txt2 {
+    font: normal normal normal 19px/29px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+    width: 90px;
+    height: 27px;
+    margin-left: -57px;
+    margin-top: -8px;
+  }
+
+  .status-agendado {
+    text-align: left;
+    font: normal normal 600 15px/23px Poppins;
+    letter-spacing: 0px;
+    color: #00cf9f;
+    opacity: 1;
+    width: 80px;
+    height: 21px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .status-cancelado {
+    text-align: left;
+    font: normal normal 600 15px/23px Poppins;
+    letter-spacing: 0px;
+    color: #dc2626;
+    opacity: 1;
+    width: 80px;
+    height: 21px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .icon-vacina {
+    background: transparent url("img/Group 561.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+  }
+  .hr {
+    width: 288px;
+    height: 1px;
+    margin-top: 2px;
+    margin-left: -20px;
+  }
+
+  .local-vacina {
+    width: 205px;
+    height: 28px;
+    color: $azulEscuro;
+    text-align: left;
+    font: normal normal normal 20px/30px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-top: 13px;
+  }
+
+  .data-vacina {
+    width: 282px;
+    height: 28px;
+    margin-top: 25px;
+    text-align: left;
+    font: normal normal normal 20px/30px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+  }
+
+  .button-detalhes {
+    background: var(--unnamed-color-00b3f3) 0% 0% no-repeat padding-box;
+    background: #00b3f3 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 4px;
+    opacity: 1;
+    width: 165px;
+    height: 55px;
+    color: $corTxt;
+    font: normal normal normal 16px/25px Poppins;
+    margin-left: -34px;
+    margin-top: 21px;
+    padding: 16px 52px 16px 45px;
+
+    a {
+      &:hover {
+        color: $corTxt;
+      }
+    }
+  }
+
+  .button-detalhescancelado {
+    background: var(--unnamed-color-00b3f3) 0% 0% no-repeat padding-box;
+    background: #00b3f3 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 4px;
+    opacity: 1;
+    width: 331px;
+    height: 55px;
+    color: $corTxt;
+    font: normal normal normal 16px/25px Poppins;
+    margin-left: -34px;
+    margin-top: 21px;
+    padding: 16px 52px 16px 45px;
+    text-align: center;
+
+    a {
+      &:hover {
+        color: $corTxt;
+      }
+    }
+  }
+
+  .cancelar-agendamento {
+    width: 165px;
+    height: 55px;
+    background: #dc2626 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 4px 0px;
+    opacity: 1;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 16px 52px 16px 45px;
+    margin-left: 131px;
+    margin-top: -55px;
+
+    a {
+      &:hover {
+        color: $corTxt;
+      }
+    }
+  }
+
+  .titulomodal-agendamento {
+    width: 505px;
+    height: 43px;
+    text-align: left;
+    font: normal normal bold 30px/30px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+
+  .modal-agendamentodata {
+    text-align: left;
+    font: normal normal bold 24px/35px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    margin-left: 60px;
+
+    width: 215px;
+    height: 47px;
+  }
+
+  .modal-status {
+    text-align: left;
+    font: normal normal bold 24px/35px Poppins;
+    letter-spacing: 0px;
+    color: #20d5ab;
+    opacity: 1;
+    margin-top: -55px;
+    margin-left: 2px;
+    width: 129px;
+    height: 33px;
+  }
+  .modal-statuscancelado {
+    text-align: left;
+    font: normal normal bold 24px/35px Poppins;
+    letter-spacing: 0px;
+    color: #dc2626;
+    opacity: 1;
+    margin-top: -55px;
+    margin-left: 2px;
+    width: 129px;
+    height: 33px;
+  }
+
+  .modal-orientações {
+    text-align: left;
+    font: normal normal bold 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    width: 113px;
+    height: 25px;
+    margin-left: 60px;
+    margin-top: 12px;
+  }
+  .modal-body {
+    text-align: left;
+    font: normal normal normal 16px/23px Poppins;
+    letter-spacing: 0px;
+    color: #ff4646;
+    opacity: 1;
+    margin-left: 80px;
+    margin-right: 48px;
+    margin-bottom: 36.5pxpx;
+    margin-top: 14px;
+    padding: 0px;
+  }
+
+  .titulo-transparencia {
+    color: var(--unnamed-color-1e293b);
+    text-align: left;
+    font: normal normal bold 24px/26px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+  }
+
+  .dados-cidadao {
+    text-align: left;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    margin-left: 60px;
+    margin-top: 24.5px;
+    border-bottom: 96px;
+  }
+
+  .modal-footer {
+    padding: 0px;
+    width: 1136px;
+    height: 72px;
+    background: #f9fafb 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 1;
+    border-width: 0px;
+  }
+
+  .modal {
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.75) 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+  }
+
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #section-to-print,
+    #section-to-print * {
+      visibility: visible;
+    }
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
 }

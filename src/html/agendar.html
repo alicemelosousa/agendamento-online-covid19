@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar</title>
+  <!-- App css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+  @@include('./partials/favicons.html')
+
+
+
+</head>
+
+<body class="dashboard">
+
+
+  <div class="container-fluid h-100 pt-0 pt-md-0 mt-0">
+    <div class="pt-0 mt-0 mt-md-0 h-100">
+      <div class="row py-1 p-md-0 pt-md-0 h-100">
+
+        @@include('./partials/sidebarDashboard2.html')
+
+        <div class="content-inner">
+          <div class="col-lg-12 main pt-0 pl-md-0 pr-md-0 h-100">
+
+            <div class="container mainHeader m-0">
+
+
+              <div class="row pt-0 pr-0">
+                <div class="col-lg-4 col-md-6 titulodashboard2">
+                  Agendar
+                </div>
+
+                <div
+                  class="col-12 col-lg-7 mt-0  col-md-4 d-flex align-items-center justify-content-end order-2 order-md-3 ml-5">
+
+                  <div class="content-inner">
+                    <div class="col-12 main pt-5 pt-md-0 px-0 px-md-5">
+                      <div class="row py-0 py-md-5 ml-5">
+                        <div class="d-flex ml-5 flex-row justify-content-end w-100">
+                          <div class="pesquisa-agendamentos">
+
+                            <input class="input-pesquisa" placeholder="Pesquisar" />
+                            <img src="assets/images/icone-pesquisa.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="row justify-contente-start">
+
+
+
+
+                <div class="row ml-4">
+                  <div class="col-lg-5 col-md-6">
+
+
+
+
+                    <form class="filtro-agendamento">
+                      
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Campanha</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Covid-19</option>
+                          <option>Contra gripe - H1N1</option>
+
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Município</label>
+                        <select class="form-control" id="exampleFormControlSelect2">
+                          <option>Assú</option>
+                          <option>Caicó</option>
+                          <option>Natal</option>
+
+                        </select>
+                      </div>
+                    
+
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Grupo de atendimento</label>
+                        <select class="form-control" id="exampleFormControlSelect3">
+                          <option>Pessoas acima de 75</option>
+                          <option>Comorbidades</option>
+                          <option>Profissionais da linha de frente</option>
+
+                        </select>
+                      </div>
+                      
+                      <div class = "form-group">
+                        <label>Data</label>
+                      <input class="form-control" type="date">
+                      </div>
+  
+                      
+                      
+
+
+                    </form>
+
+                    <div id="click-me-button" class="div-button">
+                      <button class="button btn-procurar" id="entrar" name="entrar" value="Procurar">Procurar</button>
+                    </div>
+
+
+                   
+
+
+                    
+
+                  </div>
+
+
+                  <div class="col-lg-5 col-md-6">
+
+
+
+                    <div id="party" class="horarios-agendamento">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="9.194" height="15.387" viewBox="0 0 9.194 15.387"
+                        id="party" class="seta-agendamento">
+                        <defs>
+                          <style>
+                            .sd {
+                              fill: none;
+                              stroke: #1e293b;
+                              stroke-linecap: round;
+                              stroke-linejoin: round;
+                              stroke-width: 3px;
+                            }
+                          </style>
+                        </defs>
+                        <path class="sd" d="M13.5,20.145l5.572-5.572L13.5,9" transform="translate(-11.379 -6.879)" />
+                      </svg>
+
+                      <spam class="titulolocais">Locais de vacinação </card>
+
+                        <span id="data"></span>
+                        <script>
+
+                          fetch('https://agendamento-edital023.netlify.app/api/agendar/disponibilidade/30-05-2021').then(r => {
+                            return r.json()
+
+                          }).then(corpo => {
+                            document.getElementById("data").innerHTML = corpo.data[0].data
+
+                          })
+
+
+                        </script>
+
+                        <span id="data"></span>
+                        <script>
+
+                          fetch('https://agendamento-edital023.netlify.app/api/agendar/disponibilidade/30-05-2021').then(r => {
+                            return r.json()
+
+                          }).then(corpo => {
+                            document.getElementById("data").innerHTML = corpo.data[0].data
+
+                          })
+
+
+                        </script>
+
+                        <script>
+
+                          fetch('https://agendamento-edital023.netlify.app/api/agendar/disponibilidade/30-05-2021').then(r => {
+                            return r.json()
+
+                          }).then(corpo => {
+                            document.getElementById("data").innerHTML = corpo.data[0].data
+
+                          })
+
+
+                        </script>
+
+                        <div class="vagas">
+                          <span id="municipio"></span>
+                          <script>
+
+                            fetch('https://agendamento-edital023.netlify.app/api/agendar/disponibilidade/30-05-2021').then(r => {
+                              return r.json()
+
+                            }).then(corpo => {
+                              document.getElementById("municipio").innerHTML = corpo.data[0].municipio
+
+                            })
+
+
+                          </script> |
+
+                          <span id="loc"></span>
+                          <script>
+
+                            fetch('https://agendamento-edital023.netlify.app/api/agendar/disponibilidade/30-05-2021').then(r => {
+                              return r.json()
+
+                            }).then(corpo => {
+                              document.getElementById("loc").innerHTML = corpo.data[0].localizacao
+
+                            })
+
+
+                          </script> <br>
+
+                          <span id="hr"></span>
+                          <script>
+
+                            fetch('https://agendamento-edital023.netlify.app/api/agendar/disponibilidade/30-05-2021').then(r => {
+                              return r.json()
+
+                            }).then(corpo => {
+                              document.getElementById("hr").innerHTML = corpo.data[0].municipio
+
+                            })
+
+
+                          </script>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+              <script>
+                // Hide the party <div> as soon as the webpage loads
+                $('#party').hide();
+
+                // When the first button is clicked, show the party <div> and hide the button
+                $('#click-me-button').click(function () {
+                  $('#party').toggle();
+
+
+                });
+
+              // *When the second button is clicked, toggle between showing and hiding the creatures (Winston and Hopper).
+
+              </script>
+
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      @@include('./partials/footer.html')
+</body>
+
+</html>

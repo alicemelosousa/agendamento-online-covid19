@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Autocadastro</title>
+  <!-- App css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+
+
+
+<body class="login">
+  <div class="container-fluid">
+    <div class="row no-gutter d-none d-md-flex">
+      <div class="col-md-3-pl-0 ">
+
+        <div class="login-pd-0 d-flex align-items-center bg-image">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12-pd-0 d-flex justify-content-center flex-column">
+                <div class="card-login">
+
+                  <div class="image-calendar">
+
+
+                  </div>
+                  <h1>Agendamento online</h1>
+                  <h2>Rápido e seguro</h2>
+                  <h3>Evite filas e aglomeração.<br> O seu bem é o bem de todos</h3>
+
+                </div>
+
+                <div class="footerlais">
+                  <div class="footerufrn"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--<div class="col-md-7 .d-sm-none .d-md-block">-->
+
+      <div class="container p-0 no-gutters">
+        <!--form panels-->
+        <div class="row">
+
+          <div class="col-12 col-lg-9">
+
+
+
+            <div class="cabecalhologin"><span class="d-none d-md-inline">Não tem uma conta?</span>
+
+
+              <a href="index.html" class="btn btn-cadastro"><span class="icon icon-cadastro"></span>
+                Entrar</a>
+
+            </div>
+
+
+            <div class="row mx-lg-n4">
+              <div class="col-lg-12 mb-3 px-1">
+                <form name="f1" action="dashboard.html">
+                  <div class="card">
+                    <div class="card-formcadastro">
+                      <div class="card-body">
+
+                        <label for="inlineFormInput" class="label titulocadastro">Preencha o campo abaixo</label>
+                        <label for="inlineFormInput" class="label subtitulocadastro">É rápido, simples e seguro</label>
+
+                        <label for="inlineFormInput" class="label loginemail">Email</label>
+                        <p id="email" class="form-control campoemail"></p>
+
+                        <!--<input type="email" required class="form-control campoemail" id="email" name=email>-->
+
+                        <label for="inlineFormInput" class="label nomeusuario">Nome</label>
+                        <input type="text" required class="form-control camponome" id="input">
+
+                        <label for="inlineFormInput" class="loginsenha">Senha</label>
+                        <input type="password" required class="form-control camposenha" id="senha" name="senha"  >
+                        <label for="inlineFormInput" class="loginsenhacomp">Confirmação de senha</label>
+                        <input type="password" required class="form-control camposenha" id="senhacomp" name="senhacomp">
+
+
+
+
+                        <!--<button class="button btn-continuar" value="entrar" id="entrar"> Continuar</button> -->
+
+                        
+                        <input type="submit" onclick="return validar()" class="button btn-continuar"
+                          id="entrar" value="Continuar">
+
+
+                        <!--<input type="button" onclick="location.href='index.html';" value="Go to Google" class="button btn-continuar" />-->
+                </form>
+                <label class="label rodape-autocadrasto">Ao assinar você concorda com os <a href="#" data-toggle="modal"
+                    data-target="#meuModal"><u>termos de serviços</u></a>
+                  e <a href="#" data-toggle="modal" data-target="#meuModal"><u>política de privacidade</u></a>
+
+                </label>
+
+
+                <!-- Modal -->
+
+                <div id="meuModal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
+                  aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <label class="label titulomodal">Termos e Política de privacidade</label>
+
+                      <!-- Corpo do modal -->
+                      <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet.
+
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                      </div>
+
+                      <!-- Rodapé do modal-->
+                      <div class="modal-footer">
+
+                        <button type="button" class="btn btn-modal" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                  crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                  crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                  crossorigin="anonymous"></script>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      document.getElementById("entrar").disabled = true;
+
+      //cria um event listener que escuta mudanças no input
+      document.getElementById("input").addEventListener("input", function (event) {
+
+        //busca conteúdo do input
+        var conteudo = document.getElementById("input").value;
+
+        //valida conteudo do input 
+        if (conteudo !== null && conteudo !== '') {
+          //habilita o botão
+          document.getElementById("entrar").disabled = false;
+        } else {
+          //desabilita o botão se o conteúdo do input ficar em branco
+          document.getElementById("entrar").disabled = true;
+        }
+      });
+
+      var email = document.querySelector("#email");
+      email.textContent = localStorage.getItem('valueText');
+      email.getElementById('email').value = inputText;
+
+
+      
+  function validar(){
+    senha = f1.senha.value
+  	senhacomp = f1.senhacomp.value
+
+	if (senha != senhacomp) {
+  alert("As senhas não conferem ou não podem ser reconhecidas")
+  return false;
+  }
+
+  if (senha == "") {
+  alert('Preencha o campo com sua senha');
+  f1.senha.focus();
+  return false;
+  }
+
+  if (senhacomp == "") {
+  alert('Repita sua senha');
+  return false;
+
+  }
+  
+
+}
+</script>
+
+
+</body>
+
+</html>

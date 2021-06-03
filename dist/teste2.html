@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Session - Page 2</title>
+</head>
+
+<body>
+    <div>
+        <h2>Page 2</h2>
+    </div>
+    <div>
+        <p id="viewSessionSotorage"></p>
+        <input type="button" id="inputButton2" value="Exibir o valor da session storage">
+    </div>
+    <script>
+         
+            var email = document.querySelector("#viewSessionSotorage");
+            email.textContent =  localStorage.getItem('valueText');
+            email.getElementById('viewSessionSotorage').value = inputText;
+        
+            var btn2 = document.querySelector("#inputButton2");
+
+        btn2.addEventListener("click", function () {
+            
+        })
+    </script>
+</body>
+
+</html>

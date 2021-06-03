@@ -1,0 +1,26 @@
+<html>
+
+<body>
+<a href="javascript:levarcodigo(1010,'Cafeteira');">1010-Cafeteira</a>
+<a href="javascript:levarcodigo(1020,'Jogo de panelas');">1020-Jogo de panelas</a>
+<a href="javascript:levarcodigo(1030,'Jogo de taças');">1030-Jogo de taças</a>
+<a href="javascript:levarcodigo(1040,'Churrasqueira');">1040-Churrasqueira</a>
+
+<p>
+<input type="text" name="email" id="email"></p>
+<a href="javascript:proximapagina('10')";>Pesquisar</a>
+</body>
+</html>
+
+
+<script>
+    function proximapagina(email)
+    {
+       window.open("formprincipal.html"); // Abrira a janela de pesquisa
+      
+       top.opener.document.getElementById("campo1").innerHTML = descricao;
+    window.close();
+       
+    }   
+    </script>
+

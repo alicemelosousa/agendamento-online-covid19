@@ -1,0 +1,147 @@
+.card-agendamento {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 9px #00000029;
+  border-radius: 4px;
+  opacity: 1;
+  width: 330px;
+  height: 237px;
+  margin-top: 27px;
+
+  &:nth-of-type(odd) {
+    background-color: white;
+  }
+  &:nth-of-type(even) {
+    background-color: white;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+
+  .dia {
+    font-size: 14;
+    font-weight: 300;
+  }
+}
+
+.card-transparencia {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 9px #00000029;
+  border-radius: 4px;
+  opacity: 1;
+  width: 734px;
+  height: 391px;
+  margin-top: 27px;
+  text-align: center;
+
+  font: normal normal normal 18px/30px Poppins;
+  letter-spacing: 0px;
+  color: #4a4a4a;
+  opacity: 1;
+  .subtitulo {
+    margin-left: 210px;
+    margin-top: 25px;
+  }
+
+  .grafico {
+    margin-left: -300px;
+    margin-top: 88px;
+  }
+
+  .titulo-coronavac {
+    text-align: center;
+    font: normal normal bold 18px/20px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    margin-left: -453px;
+    margin-top: 230px;
+    width: 104px;
+    height: 45px;
+  }
+
+  .titulo-pfizer {
+    text-align: center;
+    font: normal normal bold 18px/20px Poppins;
+    letter-spacing: 0px;
+    color: #1e293b;
+    opacity: 1;
+    margin-left: 279px;
+    margin-top: 230px;
+    width: 50px;
+    height: 45px;
+  }
+
+  .seta-esquerda {
+    width: 104px;
+    margin-left: 10px;
+    margin-top: 230px;
+  }
+
+  .seta-direita {
+    width: 104px;
+    margin-left: -164px;
+    margin-top: 230px;
+  }
+}
+
+.card-agendamentografico {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 9px #00000029;
+  border-radius: 4px;
+  opacity: 1;
+  width: 734px;
+  height: 391px;
+  margin-top: 27px;
+  text-align: center;
+  margin-left: 390px;
+  margin-top: 55px;
+  font: normal normal normal 18px/30px Poppins;
+  letter-spacing: 0px;
+  color: #4a4a4a;
+  opacity: 1;
+
+  .subtitulo {
+    margin-left: 280px;
+    margin-top: 25px;
+  }
+
+  .agendamentopordia {
+    margin-left: -360px;
+    margin-top: 84px;
+    padding: 0px;
+  }
+}
+
+.assunto {
+  border: 1px solid #707070;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.resposta-chamado {
+  box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.1);
+}
+
+.titulolocais {
+  text-align: left;
+  
+  letter-spacing: 0px;
+  color: #1e293b;
+  opacity: 1;
+  margin-left: 100px;
+  margin-top: -100px;
+  width: 443px;
+  height: 36px;
+
+  .vagas {
+  text-align: left;
+  font: normal normal medium 18px/26px Poppins;
+  letter-spacing: 0px;
+  color: #1E293B;
+  opacity: 1;
+  margin-top: -150px;
+  }
+  
+}
+

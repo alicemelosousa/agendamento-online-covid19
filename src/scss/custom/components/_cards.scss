@@ -1,224 +1,146 @@
 .card {
   border: 0px;
   background-color: transparent;
-
-  .card-index {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #0000001a;
-    border: 1px solid #e3e3e3;
-    border-radius: 6px;
-    opacity: 1;
-    margin-top: 272px;
-    margin-left: 448px;
-    margin-bottom: 272px;
-    margin-right: 455px;
-    width: 504px;
-    height: 456px;
-    align-items: center;
-
-    header {
-      h4 {
-        font-size: 1rem;
-        font-weight: bold;
-        color: $cinzaIcone;
-        margin-bottom: 0;
-      }
-
-      p {
-        font-weight: bold;
-      }
-    }
-
-    .card-body {
-      padding: 0px;
-    }
-    .campoemail {
-      top: 396px;
-      left: 1011px;
-      width: 378px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      border: 1px solid #b4b4b4;
-      border-radius: 4px;
-      opacity: 1;
-      margin-left: 50px;
-      margin-right: 76px;
-      margin-bottom: 11px;
-      font-size: 16px;
-    }
-    .camposenha {
-      top: 487px;
-      left: 1011px;
-      width: 378px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      border: 1px solid #b4b4b4;
-      border-radius: 4px;
-      opacity: 1;
-      margin-left: 50px;
-      margin-right: 76px;
-      margin-bottom: 18px;
-      font-family: Verdana, sans-serif;
-      font-size: 30px;
-      padding-top: 22px;
-      padding-bottom: 21px;
-      padding-left: 16px;
-      letter-spacing: 3px;
-    }
-
-    .link {
-      top: 560px;
-      left: 1213px;
-      width: 174px;
-      height: 23px;
-      text-align: center;
-      font: normal normal normal 16px/25px Poppins;
-      letter-spacing: 0px;
-      color: #4a4a4a;
-      opacity: 1;
-      margin-left: 252px;
-      margin-right: 58px;
-      margin-bottom: 20px;
-    }
-
-    .logintitulo {
-      top: 321px;
-      left: 1087px;
-      width: 228px;
-      height: 23px;
-      margin-top: 49px;
-      margin-left: 126px;
-      margin-right: 151px;
-      text-align: left;
-      font: normal normal 300 16px/25px Poppins;
-      letter-spacing: 0px;
-      color: #00b3f3;
-      opacity: 1;
-    }
-
-    .loginemail {
-      top: 368px;
-      left: 1017px;
-      width: 43px;
-      height: 23px;
-      text-align: left;
-      font: normal normal 300 16px/25px Poppins;
-      letter-spacing: 0px;
-      color: #4a4a4a;
-      opacity: 1;
-      margin-top: 24px;
-      margin-left: 56px;
-      margin-right: 405px;
-      margin-bottom: 5px;
-    }
-
-    .loginsenha {
-      text-align: left;
-      font: normal normal 300 16px/25px Poppins;
-      letter-spacing: 0px;
-      color: #4a4a4a;
-      opacity: 1;
-      margin-left: 56px;
-      margin-right: 396px;
-      margin-bottom: 5px;
-    }
-
-    .checado {
-      background-color: $laranjaClaro3;
-      border-radius: 0.375rem;
-      padding: 8px 18px;
-
-      label {
-        margin-bottom: 0;
-      }
-    }
-    .nao-checado {
-      border-radius: 0.375rem;
-      border: 1px solid $laranjaClaro3;
-      padding: 8px 18px;
-
-      label {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .card-permuta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .permuta-1 {
-      background-color: #e9f1f8;
-      border-radius: 0.375rem;
-      max-width: 80%;
-    }
-    h4 {
-      font-size: 1.25rem;
-      color: $corTxt;
-    }
-    .permuta-2 {
-      border: 1px solid;
-      border-color: $laranjaClaro;
-      border-radius: 0.375rem;
-      max-width: 80%;
-    }
-  }
-  .busca-anexo {
-    background-color: $bg2;
-    border-radius: 0.375rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    p {
-      margin-bottom: 0 !important;
-      padding-left: 1rem;
-    }
-  }
-  .tabela-anexo {
-    border-radius: 0.375rem;
-    border: 1px solid $laranjaClaro2;
-    width: 100%;
-    margin-bottom: 1rem;
-    color: $azulEscuro;
-
-    tr:nth-child(2n) {
-      background-color: $bg2;
-    }
-
-    td {
-      padding: 0.75rem;
-      vertical-align: top;
-    }
-  }
-
-  footer {
-    border-top: 1px solid $laranjaClaro2;
-    button,
-    a {
-      font-size: 0.8rem;
-      font-weight: 400;
-      &:not(:last-of-type) {
-        margin-right: 5px;
-      }
-    }
-  }
+  
 }
+.card-index {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001a;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  opacity: 1;
+  margin-top: 272px;
+  margin-left: 448px;
+  margin-bottom: 272px;
+  margin-right: 455px;
+  width: 504px;
+  height: 456px;
+  align-items: center;
 
-.card.em-andamento {
   header {
     h4 {
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-weight: bold;
-      color: $azulEscuro;
-      margin-bottom: 0.5rem;
+      color: $cinzaIcone;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-weight: bold;
     }
   }
 
-  p {
-    font-size: 1rem;
-    font-weight: normal;
-    color: $azulEscuro;
+  .card-body {
+    padding: 0px;
+  }
+  .campoemail {
+    top: 396px;
+    left: 1011px;
+    width: 378px;
+    height: 55px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 76px;
+    margin-bottom: 11px;
+    font-size: 16px;
+  }
+  .camposenha {
+    top: 487px;
+    left: 1011px;
+    width: 378px;
+    height: 55px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 76px;
+    margin-bottom: 18px;
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-left: 16px;
+    letter-spacing: 3px;
+  }
+
+  .link {
+    top: 560px;
+    left: 1213px;
+    width: 174px;
+    height: 23px;
+    text-align: center;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 252px;
+    margin-right: 58px;
+    margin-bottom: 20px;
+  }
+
+  .logintitulo {
+    top: 321px;
+    left: 1087px;
+    width: 228px;
+    height: 23px;
+    margin-top: 49px;
+    margin-left: 126px;
+    margin-right: 151px;
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+  }
+
+  .loginemail {
+    top: 368px;
+    left: 1017px;
+    width: 43px;
+    height: 23px;
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-top: 24px;
+    margin-left: 56px;
+    margin-right: 405px;
+    margin-bottom: 5px;
+  }
+
+  .loginsenha {
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 56px;
+    margin-right: 396px;
+    margin-bottom: 5px;
+  }
+
+  .checado {
+    background-color: $laranjaClaro3;
+    border-radius: 0.375rem;
+    padding: 8px 18px;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .nao-checado {
+    border-radius: 0.375rem;
+    border: 1px solid $laranjaClaro3;
+    padding: 8px 18px;
+
+    label {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -349,13 +271,12 @@
     left: 1011px;
     width: 378px;
     height: 55px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #B4B4B4;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b4b4b4;
     border-radius: 4px;
     opacity: 1;
     margin-left: 44px;
     margin-right: 76px;
-    margin-bottom: 21px;
     font-size: 16px;
   }
   .camposenha {
@@ -459,5 +380,261 @@
     margin-left: 128px;
     margin-right: 126px;
     margin-bottom: 39px;
+  }
+}
+
+.card-formcadastro {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001a;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  opacity: 1;
+  margin-top: 156px;
+  margin-left: 448px;
+  margin-bottom: 272px;
+  margin-right: 455px;
+  width: 460px;
+  height: 617px;
+  align-items: center;
+
+  header {
+    h4 {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $cinzaIcone;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  .card-body {
+    padding: 0px;
+  }
+
+  .loginemail {
+    top: 368px;
+    left: 1017px;
+    width: 43px;
+    height: 23px;
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 405px;
+    margin-bottom: 5px;
+  }
+
+  .campoemail {
+    top: 396px;
+    left: 1011px;
+    width: 378px;
+    height: 55px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 44px;
+    margin-right: 76px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding-top: 19px;
+  }
+
+  .loginsenha {
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 396px;
+    margin-bottom: 5px;
+  }
+  .camposenha {
+    top: 487px;
+    left: 1011px;
+    width: 378px;
+    height: 55px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 44px;
+    margin-right: 76px;
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-left: 16px;
+    letter-spacing: 3px;
+  }
+
+  .loginsenhacomp {
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-top: 9px;
+    margin-left: 50px;
+    margin-right: 396px;
+    margin-bottom: 5px;
+    width: 186px;
+    height: 23px;
+  }
+
+  .nomeusuario {
+    top: 368px;
+    left: 1017px;
+    width: 48px;
+    height: 23px;
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 405px;
+    margin-bottom: 5px;
+  }
+
+  .camponome {
+    top: 396px;
+    left: 1011px;
+    width: 378px;
+    height: 55px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    opacity: 1;
+    margin-left: 44px;
+    margin-right: 76px;
+    margin-bottom: 21px;
+    font-size: 16px;
+  }
+
+  .link {
+    top: 560px;
+    left: 1213px;
+    width: 174px;
+    height: 23px;
+    text-align: center;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 252px;
+    margin-right: 58px;
+    margin-bottom: 20px;
+  }
+
+  .logintitulo {
+    top: 321px;
+    left: 1087px;
+    width: 228px;
+    height: 23px;
+    margin-top: 49px;
+    margin-left: 126px;
+    margin-right: 151px;
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+  }
+
+  .titulocadastro {
+    width: 295px;
+    height: 31px;
+    text-align: left;
+    font: normal normal bold 22px/33px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+    margin-top: 34px;
+    margin-left: 82px;
+    margin-right: 83px;
+    margin-bottom: 0px;
+  }
+
+  .subtitulocadastro {
+    width: 208px;
+    height: 23px;
+    text-align: left;
+    font: normal normal 300 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 128px;
+    margin-right: 126px;
+    margin-bottom: 12px;
+  }
+
+  .rodape-autocadrasto {
+    width: 460px;
+    height: 64px;
+    text-align: center;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-top: 20px;
+  }
+
+  .modal-content {
+    width: 1058px;
+    height: 693px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 142px;
+    margin-left: 80px;
+  }
+
+  .titulomodal {
+    width: 505px;
+    height: 43px;
+    text-align: left;
+    font: normal normal bold 30px/30px Poppins;
+    letter-spacing: 0px;
+    color: #00b3f3;
+    opacity: 1;
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+
+  .modal-body {
+    width: 943px;
+    height: 494px;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #4a4a4a;
+    opacity: 1;
+    margin-left: 67px;
+    margin-right: 48px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  .modal-footer {
+    padding: 0px;
+    width: 1056px;
+    height: 72px;
+    background: #f9fafb 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 1;
+    border-width: 0px;
+  }
+
+  .modal {
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.75) 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
   }
 }

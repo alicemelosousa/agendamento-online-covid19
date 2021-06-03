@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+</script>
+<script>
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+
+$(document).ready(function(){
+$('#resultado').text(getUrlParameter('resultado'));
+$('#txa').text(getUrlParameter('txa'));
+$('#tot').text(getUrlParameter('tot'));
+
+});
+</script>
+</head>
+<body>
+
+<h2>Pedido</h2>
+
+<div class="container">
+                <div class="last-liner">
+                    <p>Valor do Pedido: <input id="resultado" class="resultado"></p>
+                    <p>Taxa de Entrega: <span id="txa" class="txa">5.00</span></p>
+                    <p>Total: <span id="tot" class="tot"></span></p>
+                </div>
+            </div>
+
+</body>
+</html>

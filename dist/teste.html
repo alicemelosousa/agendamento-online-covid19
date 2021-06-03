@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+
+<title>Testeeee</title>
+
+<body>
+    <span id="span"></span>
+
+
+    <script>
+
+        fetch('https://agendamento-edital023.netlify.app/api/agendamentos/').then(r=> {
+                return r.json()
+               
+              }).then(corpo=>{
+                document.getElementById("span").innerHTML=corpo.data[0].status
+
+              })
+
+
+    </script>
+</body>
+
+  </html>
+
+  
+  
+  
+  
+ 

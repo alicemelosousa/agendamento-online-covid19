@@ -1,52 +1,73 @@
 .pagination {
+  width: 350px;
+  margin-top: -27px;
+  height: 50px;
   .page-item {
+    width: 55px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
     &:first-child {
       .page-link {
-        background-color: $verdeMuitoClaro;
-        color: $verdeClaro;
-        padding-left: 20px;
-        padding-right: 20px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #d1d5db;
+        width: 55px;
+        height: 38px;
+        opacity: 1;
+        text-align: center;
+        font: normal normal normal 16px/22px Poppins;
+        letter-spacing: 0px;
+        
+        opacity: 1;
       }
     }
 
     &:last-child {
       .page-link {
-        background-color: $verdeClaro;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #d1d5db;
+        
+        opacity: 1;
       }
     }
 
     .page-link {
-      background-color: transparent;
+      background-color: #ffffff 0% 0% no-repeat padding-box;
       color: $azulEscuro;
-      border-radius: 8px;
+      border-radius: 0px;
     }
 
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 0px;
     }
     &.active {
       .page-link {
-        background-color: $verdeClaro;
-        border-radius: 8px;
-        color: white;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid $azulClaro;
+        color: $azulClaro;
+        opacity: 1;
       }
     }
   }
 
   .disabled {
+    width: 55px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
     &:first-child,
     &:last-child {
       .page-link {
-        background-color: #e9ecef;
-        color: $corTxt;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #d1d5db;
+        
+        opacity: 1;
       }
     }
     .page-link {
-      background-color: #e9ecef;
-      color: $corTxt;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #d1d5db;
+      opacity: 1;
       img {
         display: none;
       }

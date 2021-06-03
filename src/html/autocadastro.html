@@ -67,7 +67,7 @@
 
 
               <a href="index.html" class="btn btn-cadastro"><span class="icon icon-cadastro"></span>
-                Crie uma</a>
+                Entrar</a>
 
             </div>
 
@@ -76,60 +76,63 @@
               <div class="col-lg-12 mb-3 px-1">
                 <form>
                   <div class="card">
-                      <div class="card-cadastro">
-                    <div class="card-body">
-                       
+                    <div class="card-cadastro">
+                      <div class="card-body">
+
                         <label for="inlineFormInput" class="label titulocadastro">Preencha o campo abaixo</label>
                         <label for="inlineFormInput" class="label subtitulocadastro">É rápido, simples e seguro</label>
                         <label for="inlineFormInput" class="label loginemail">Email</label>
-                        <input type="text" required class="form-control campoemail" id="input">
+                        <input type="email" name="email" class="form-control campoemail" id="input" required>
+                       
 
                         
+                        <input type="button" onclick="location.href='autocadastro-dados.html';"
+                          class="button btn-continuar-email" id="continuar" value="Continuar">
 
-                      <button class="button btn-continuar" value="entrar" id="entrar"> Continuar</button>
                 </form>
 
-              </div>
-
+                
               </div>
 
             </div>
 
           </div>
+
         </div>
       </div>
+    </div>
 
+    <!--              JAVASCRIPT              -->
 
-      <script>
-        document.getElementById("entrar").disabled = true;
+    <script>
 
-        //cria um event listener que escuta mudanças no input
-        document.getElementById("input").addEventListener("input", function (event) {
+      document.getElementById("continuar").disabled = true;
 
-          //busca conteúdo do input
-          var conteudo = document.getElementById("input").value;
+      //cria um event listener que escuta mudanças no input
+      document.getElementById("input").addEventListener("input", function (event) {
 
-          //valida conteudo do input 
-          if (conteudo !== null && conteudo !== '') {
-            //habilita o botão
-            document.getElementById("entrar").disabled = false;
-          } else {
-            //desabilita o botão se o conteúdo do input ficar em branco
-            document.getElementById("entrar").disabled = true;
-          }
-        });
+        //busca conteúdo do input
+        var conteudo = document.getElementById("input").value;
 
-
-      </script>
-
-
-
+        //valida conteudo do input 
+        if (conteudo !== null && conteudo !== '') {
+          //habilita o botão
+          document.getElementById("continuar").disabled = false;
+        } else {
+          //desabilita o botão se o conteúdo do input ficar em branco
+          document.getElementById("continuar").disabled = true;
+        }
+      });
 
 
 
+      var btn = document.querySelector("#continuar");
 
-
-
+      btn.addEventListener("click", function () {
+          var text = document.querySelector("#input").value;
+          localStorage.setItem('valueText', text);
+      })
+    </script>
 
 </body>
 
